@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Shop.Entities;
 using Domain.Shop.IRepositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,11 +17,14 @@ namespace Web.Controllers
         private readonly IProductRepository productRepository;
         private readonly ShoppingCart cart;
         IServiceProvider services;
+     
+
         public CartController(IProductRepository productRepository, ShoppingCart cart, IServiceProvider services)
         {
             this.productRepository = productRepository;
             this.cart = cart;
             this.services = services;
+
         }
         public string GetCart(IServiceProvider service)
         {
@@ -40,7 +44,7 @@ namespace Web.Controllers
                 throw e;
             }
         }
-       
+
         public ViewResult ShoppingCart()
         {
             cart.Id = GetCart(services);
@@ -62,17 +66,35 @@ namespace Web.Controllers
                 cart.AddToCart(product, cartId);
                 return RedirectToAction("ShoppingCart");
             }
-            return View();                
-        }
-        public ActionResult RemoveFromShoppingCart(string id)
-        {
-            var Drink = productRepository.All.FirstOrDefault(d => d.Id == id);
-            if (Drink != null)
-            {
-                cart.RemoveFromCart(Drink);
-                return RedirectToAction("ShoppingCart");
-            }
             return View();
+        }
+        [HttpPost]
+        public bool Delete(string id)
+        {
+            try
+            {
+                cart.RemoveFromCart(productRepository.All.FirstOrDefault(d => d.Id == id), GetCart(services));
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+        [HttpPost]
+        public bool Update(string id , string quantity)
+        {
+            try
+            {
+                cart.UpdateQuantityInCart(id, quantity,GetCart(services));
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+               
+            }
+            
         }
     }
 }

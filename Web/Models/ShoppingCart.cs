@@ -13,13 +13,11 @@ namespace Web.Models
     public class ShoppingCart : Cart
     {
         private readonly ShopDBContext context;
-
         public List<CartProduct> cartProducts { get; set; }
         public ShoppingCart(ShopDBContext context)
         {
             this.context = context;
         }
-      
         public void AddToCart(Product product,string cartId)
         {
             var CartProduct = context.CartProducts.SingleOrDefault(
@@ -51,25 +49,22 @@ namespace Web.Models
             }
             context.SaveChanges();
         }
-        public int RemoveFromCart(Product product)
+        public void RemoveFromCart(Product product, string CartId)
         {
             var cartProduct = context.CartProducts
-                .SingleOrDefault(s => s.ProductId == product.Id && s.CartId == Id);
-            int nowQuantity = 0;
+                .SingleOrDefault(s => s.ProductId == product.Id && s.CartId == CartId);
+
             if (cartProduct != null)
             {
                 if (cartProduct.Quantity > 1)
                 {
-                    cartProduct.Quantity--;
-                    nowQuantity = cartProduct.Quantity;
-                }
+                    cartProduct.Quantity--;                }
                 else
                 {
                     context.CartProducts.Remove(cartProduct);
                 }
             }
             context.SaveChanges();
-            return nowQuantity;
         }
         public List<CartProduct> GetCartProducts(string cardId)
         {
@@ -94,6 +89,34 @@ namespace Web.Models
             var total = context.CartProducts.Where(c => c.CartId == Id)
                 .Select(c => c.Product.Price * c.Quantity).Sum();
             return total.Value;
+        }
+        public void UpdateQuantityInCart(string id, string quantity,string cartId)
+        {
+            try
+            {
+
+                var model = context.CartProducts.Where(s => s.Product.Id == id && s.CartId == cartId).FirstOrDefault();
+                int newQuantity = Convert.ToInt32(quantity);
+                if(newQuantity == 0)
+                {
+                    context.Remove(model);
+                    context.SaveChanges();
+                }
+                else
+                {
+                    if (model.Quantity != newQuantity)
+                    {
+                        model.Quantity = newQuantity;
+                        context.Update(model);
+                    }
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

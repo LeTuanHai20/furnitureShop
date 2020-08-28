@@ -47,6 +47,7 @@ namespace Shop.Application
             services.AddScoped<IShopAddressRepository, ShopAddressRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductImageRepository, ProductImageRepository>();
+          
         }
     }
 
