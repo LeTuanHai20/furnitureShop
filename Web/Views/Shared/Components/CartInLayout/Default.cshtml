@@ -1,0 +1,39 @@
+﻿@model Web.Models.ShoppingCartViewModel
+
+@foreach (var item in Model.ShoppingCart.cartProducts)
+{
+    <li class="product-item">
+        <table class="table cart-table">
+            <tbody>
+                <tr>
+                    <td class="product-item-image">
+                        <a href="detail.html" class="" title="">
+                            <img src="~/imageUpload/@item.Product.ProductImages[0].Url" alt="" width="60" height="60" class="img-responsive">
+                        </a>
+                        <button class="remove-product-cart smooth">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </td>
+                    <td class="product-item-name">
+                        <h4 class="product-name">
+                            <a href="detail.html" class="smooth" title="">@item.Product.ProductName</a>
+                        </h4>
+                        <span class="product-item-quantity">@item.Quantity</span>
+                    </td>
+                    <td class="product-item-price">
+                        <span class="shopping-price">@item.Product.Price</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </li>
+
+}
+<li class="total-price clearfix">
+    <label class="total-title">TOTAL:</label>
+    <label class="float-right"></label>
+</li>
+<li class="shopping-cart-checkout">
+    <a href="cart.html" class="smooth" title="">GO TO CART</a>
+    <a href="checkout.html" class="smooth" title="">CHECKOUT</a>
+</li>

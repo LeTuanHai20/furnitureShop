@@ -1,0 +1,409 @@
+﻿@model IEnumerable<Domain.Shop.Dto.Products.ProductViewModel>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="product-list">
+    <div class="container">
+        <div class="row">
+            <aside class="col-lg-3 col-md-3 aside-left">
+                <span class="close-aside-left"><i class="fa fa-times" aria-hidden="true"></i></span>
+                <div class="aside-filter">
+                    <h3 class="aside-title">SHOP BY</h3>
+                    <form class="filter-category">
+                        <div class="filter-box">
+                            <h4 class="filter-box-title">CATEGORY</h4>
+                            <div class="fillter-category">
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Hair Accessories</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Makeup</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Nail Care</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Therapeutic Supports</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Skin Care</p>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="filter-box">
+                            <h4 class="filter-box-title">price</h4>
+                            <fieldset class="filter-price">
+                                <div class="price-wrap">
+                                    <div class="price-container clearfix">
+                                        <div class="price-wrap-1">
+                                            <label for="one">$</label>
+                                            <input id="one">
+                                        </div>
+                                        <div class="price-wrap-2">
+                                            <label for="two">$</label>
+                                            <input id="two">
+                                        </div>
+                                        <button type="submit" class="hv-border-inline">SEARCH</button>
+                                    </div>
+                                </div>
+                                <div class="price-field">
+                                    <input type="range" min="0" max="999" value="0" id="lower">
+                                    <input type="range" min="0" max="999" value="999" id="upper">
+                                </div>
+
+                            </fieldset>
+                        </div>
+                        <div class="filter-box">
+                            <h4 class="filter-box-title">MANUFACTURER</h4>
+                            <div class="fillter-category">
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>g plan (4)</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Duresta (2)</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Parker Knoll (10)</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>Collins & Hayes (7)</p>
+                                </label>
+                                <label class="choose clearfix">
+                                    <input type="radio" name="keyword">
+                                    <span class="radio-checked"></span>
+                                    <p>ercol (0)</p>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="filter-box">
+                            <h4 class="filter-box-title">COLOR</h4>
+                            <div class="fillter-category fillter-color">
+                                <div class="table">
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="red"></span>
+                                        <p>Red</p>
+                                    </label>
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="blue"></span>
+                                        <p>blue</p>
+                                    </label>
+                                </div>
+                                <div class="table">
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="green"></span>
+                                        <p>green</p>
+                                    </label>
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="yellow"></span>
+                                        <p>yellow</p>
+                                    </label>
+                                </div>
+                                <div class="table">
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="orange"></span>
+                                        <p>orange</p>
+                                    </label>
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="pink"></span>
+                                        <p>pink</p>
+                                    </label>
+                                </div>
+                                <div class="table">
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="purple"></span>
+                                        <p>purple</p>
+                                    </label>
+                                    <label class="choose clearfix">
+                                        <input type="radio" name="keyword">
+                                        <span class="radio-checked" data-color="grey"></span>
+                                        <p>grey</p>
+                                    </label>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="aside-best-seller">
+                    <h3 class="aside-title">BEST SELLER</h3>
+                    <div class="deals-box product-info clearfix">
+                        <div class="product-image-right">
+                            <a href="detail.html" class="hv-radial">
+                                <img src="~/images/catalog/demo/products/product32.png" alt="">
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h5 class="product-name"><a href="detail.html" class="smooth" title="">Aliquam eget leo faucibus</a></h5>
+                            <div class="rating">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="price">$215.00 <span class="price-old">$315.00</span></div>
+                        </div>
+                    </div>
+                    <div class="deals-box product-info clearfix">
+                        <div class="product-image-right">
+                            <a href="detail.html" class="hv-radial">
+                                <img src="~/images/catalog/demo/products/product31.png" alt="">
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h5 class="product-name"><a href="detail.html" class="smooth" title="">Duis vitae moliS lorem</a></h5>
+                            <div class="rating">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="price">$115.00 <span class="price-old">$142.00</span></div>
+                        </div>
+                    </div>
+                    <div class="deals-box product-info clearfix">
+                        <div class="product-image-right">
+                            <a href="detail.html" class="hv-radial">
+                                <img src="~/images/catalog/demo/products/product33.png" alt="">
+                            </a>
+                        </div>
+                        <div class="box">
+                            <h5 class="product-name"><a href="detail.html" class="smooth" title="">Curabitur biben urnaet</a></h5>
+                            <div class="rating">
+                                <div class="rating-box">
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star fa-stack-1x"></i>
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                    <span class="fa fa-stack">
+                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="price">$115.00 <span class="price-old">$142.00</span></div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="col-lg-9 col-md-9">
+                <div class="product-filter-top">
+                    <div class="row">
+                        <div class="col-lg-8 col-sm-8 col-xs-12 form-inline">
+                            <div class="form-group sort-by">
+                                <label class="control-label">Sort-by</label>
+                                <select class="form-control">
+                                    <option>Position Asc</option>
+                                    <option>Position Desc</option>
+                                    <option>Name (A - Z)</option>
+                                    <option>Name (Z - A)</option>
+                                    <option>Price (Low > High)</option>
+                                    <option>Price (High > Low)</option>
+                                    <option>Rating (Highest)</option>
+                                    <option>Rating (Lowest)</option>
+                                </select>
+                            </div>
+                            <div class="form-group sort-by">
+                                <label class="control-label">Show</label>
+                                <select class="form-control">
+                                    <option>16</option>
+                                    <option>10</option>
+                                    <option>25</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-4 col-xs-12">
+                            <div class="sidebar-overlay"></div>
+                            <div class="list-view">
+                                <button type="button" class="sidebar-toggle-btn"><i class="fa fa-align-left" aria-hidden="true"></i>SIDEBAR</button>
+                                <button type="button" id="table-view" class="active">
+                                    <i class="fa fa-table" aria-hidden="true"></i>
+                                </button>
+                                <button type="button" id="list-view">
+                                    <i class="fa fa-list" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-list-view">
+                    <div class="row">
+                        @foreach (var item in Model)
+                        {
+                            <div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
+                                <div class="product-box clearfix">
+                                    <div class="product-image">
+                                        <a href="detail.html" class="c-img link-product">
+                                            <img src="~/imageUpload/@item.DisplayImages[0]" class="img-responsive" alt="" height="250px">
+                                        </a>
+                                        <a class="smooth quickview iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" target="_self" data-fancybox-type="iframe">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4 class="product-name"><a href="detail.html" class="smooth" title="">@item.ProductName</a></h4>
+                                        <div class="price">
+                                           @item.Price <span class="price-old">$142.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-box">
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-1x"></i>
+                                                    <i class="fa fa-star-o fa-stack-1x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-1x"></i>
+                                                    <i class="fa fa-star-o fa-stack-1x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-1x"></i>
+                                                    <i class="fa fa-star-o fa-stack-1x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star fa-stack-1x"></i>
+                                                    <i class="fa fa-star-o fa-stack-1x"></i>
+                                                </span>
+                                                <span class="fa fa-stack">
+                                                    <i class="fa fa-star-o fa-stack-1x"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="product-desc">
+                                            @item.Description
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                        <button class="wishlist-btn smooth" onclick="window.location.href='compare.html'">
+                                            <i class="fa fa-retweet" aria-hidden="true"></i>
+                                        </button>
+                                        
+                                        <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 162px; " asp-action="AddToShoppingCart" asp-controller="Cart" asp-route-id="@item.Id"> ADD TO CART</a>
+                                        <button class="wishlist-btn smooth" onclick="window.location.href='wishlist.html'">
+                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="product-filter-top">
+                    <div class="row">
+                        <div class="col-lg-6 col-sm-8 col-xs-12 form-inline">
+                            <div class="form-group sort-by">
+                                <label class="control-label">Sort assby</label>
+                                <select class="form-control">
+                                    <option>Position</option>
+                                    <option>Name (A - Z)</option>
+                                    <option>Name (Z - A)</option>
+                                    <option>Price (Low > High)</option>
+                                    <option>Price (High > Low)</option>
+                                    <option>Rating (Highest)</option>
+                                    <option>Rating (Lowest)</option>
+                                </select>
+                            </div>
+                            <div class="form-group sort-by">
+                                <label class="control-label">Show</label>
+                                <select class="form-control">
+                                    <option>16</option>
+                                    <option>10</option>
+                                    <option>25</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-4 col-xs-12">
+                            <ul class="pagination">
+                                <li class="active">
+                                    <span>1</span>
+                                </li>
+                                <li>
+                                    <a href="#" class="smooth" title="">2</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="smooth" title="">3</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="smooth" title="">>|</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

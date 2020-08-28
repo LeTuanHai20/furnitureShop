@@ -1,0 +1,30 @@
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.deps.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.csprojAssemblyReference.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.AssemblyInfoInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.AssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.csproj.CopyComplete
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Infrastructure.Database.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Infrastructure.Database.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.csproj.CoreCompileInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.deps.json
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.dll
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Domain.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.csprojAssemblyReference.cache
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.AssemblyInfoInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.AssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.csproj.CoreCompileInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.csproj.CopyComplete
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.dll
+D:\PROJECT-TTS-D6\BlogManagement\Domain.Shop.Dto\obj\Debug\netcoreapp3.1\Domain.Shop.Dto.pdb

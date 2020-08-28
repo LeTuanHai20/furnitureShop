@@ -1,0 +1,40 @@
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.deps.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.csprojAssemblyReference.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.AssemblyInfoInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.AssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.csproj.CoreCompileInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.csproj.CopyComplete
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.deps.json
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.csprojAssemblyReference.cache
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.AssemblyInfoInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.AssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.csproj.CoreCompileInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.csproj.CopyComplete
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Web\obj\Debug\netcoreapp3.1\Infrastructure.Web.pdb

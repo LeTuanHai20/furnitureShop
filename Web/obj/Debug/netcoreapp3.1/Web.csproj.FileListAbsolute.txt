@@ -1,0 +1,422 @@
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.exe
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.deps.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.Views.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Web.Views.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Castle.Core.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.AutoHistory.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Npgsql.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Application.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Shop.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Application.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Shop.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.csproj.CoreCompileInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\_TableRow.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\_TableRow.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\_MailSetting.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\_SiteSetting.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\_SSOSetting.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Default\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Material\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Material\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Material\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\_TableRow.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ProductType\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ProductType\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ProductType\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Roles\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Roles\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Roles\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Shared\_MainMenu.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Shared\_MenuItem.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopAddress\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopAddress\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopAddress\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopSetting\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\TagHelpers\_PageHeader.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Tag\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Tag\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Tag\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Users\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Users\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Users\Update.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\_ViewImports.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\_ViewStart.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\ForgotPassword.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\ResetPassword.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_confirmEmail.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Web.genruntimeconfig.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Product\Index.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Product\Create.cshtml.g.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Product\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\appsettings.json
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.exe
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\nlog.config
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.deps.json
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.json
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.runtimeconfig.dev.json
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.Views.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Web.Views.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Castle.Core.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.AutoHistory.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Proxies.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\dotnet-aspnet-codegenerator-design.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\NLog.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Npgsql.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Application.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Shop.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Application.Dto.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Application.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Shop.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Infrastructure.Web.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Domain.Shop.Dto.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Infrastructure.Database.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.csprojAssemblyReference.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfoInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.AssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.csproj.CoreCompileInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.RazorAssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.input.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.TagHelpers.output.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.RazorCoreGenerate.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\BlogCategory\_TableRow.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Category\_TableRow.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\_MailSetting.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\_SiteSetting.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Configuration\_SSOSetting.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Default\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Material\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Material\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Material\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Menus\_TableRow.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ProductType\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ProductType\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ProductType\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Roles\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Roles\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Roles\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Shared\_Layout.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Shared\_MainMenu.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Shared\_MenuItem.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\TagHelpers\_PageHeader.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Tag\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Tag\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Tag\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Users\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Users\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Users\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\_ViewImports.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\_ViewStart.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\ForgotPassword.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Login\ResetPassword.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_confirmEmail.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.RazorTargetAssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.Views.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.csproj.CopyComplete
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.Manifest.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\staticwebassets\Web.StaticWebAssets.xml
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.genruntimeconfig.cache
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Blog\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Blog\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Blog\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Blog\GetBlog.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\BlogCategory\Default.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_BlogRow.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Product\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Product\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\Product\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopAddress\Create.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopAddress\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopAddress\Update.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Areas\Administrator\Views\ShopSetting\Index.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Web.MvcApplicationPartsAssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Cart\ShoppingCart.cshtml.g.cs
+D:\PROJECT-TTS-D6\BlogManagement\Web\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\CartInLayout\Default.cshtml.g.cs

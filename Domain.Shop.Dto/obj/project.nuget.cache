@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z21Vqlu3rSzJdByd47t36VU9yIHoi/R3m2wME4RDTrZNq8vksF0fPNiR5anIGMZnchSBsB+/20ngOkKeMXfz9w==",
+  "success": true,
+  "projectFilePath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Shop.Dto\\Domain.Shop.Dto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tuanhai\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.7\\microsoft.aspnetcore.http.features.3.1.7.nupkg.sha512",
+    "C:\\Users\\tuanhai\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.7\\microsoft.extensions.primitives.3.1.7.nupkg.sha512",
+    "C:\\Users\\tuanhai\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\tuanhai\\.nuget\\packages\\system.io.pipelines\\4.7.1\\system.io.pipelines.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

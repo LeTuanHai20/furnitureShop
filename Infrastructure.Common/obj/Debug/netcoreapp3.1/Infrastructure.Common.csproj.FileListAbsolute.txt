@@ -1,0 +1,18 @@
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\bin\Debug\netcoreapp3.1\Infrastructure.Common.deps.json
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.AssemblyInfoInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.AssemblyInfo.cs
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.csproj.CoreCompileInputs.cache
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.dll
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+C:\Users\Nam Hoang\Desktop\Project TTS\ShopSetting_ShopAddress\furnitureshop\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.csprojAssemblyReference.cache
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\bin\Debug\netcoreapp3.1\Infrastructure.Common.deps.json
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\bin\Debug\netcoreapp3.1\Infrastructure.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\bin\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.AssemblyInfoInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.AssemblyInfo.cs
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.csproj.CoreCompileInputs.cache
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.dll
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.pdb
+D:\PROJECT-TTS-D6\BlogManagement\Infrastructure.Common\obj\Debug\netcoreapp3.1\Infrastructure.Common.csprojAssemblyReference.cache
