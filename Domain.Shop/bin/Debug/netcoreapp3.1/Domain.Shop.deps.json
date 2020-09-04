@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "Domain.Shop/1.0.0": {
         "dependencies": {
+          "Domain.Application": "1.0.0",
           "Domain.Application.Dto": "1.0.0",
           "Domain.Shop.Dto": "1.0.0",
           "Infrastructure.Database": "1.0.0",
@@ -675,6 +676,18 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
+      "Domain.Application/1.0.0": {
+        "dependencies": {
+          "Domain.Application.Dto": "1.0.0",
+          "Infrastructure.Database": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.0",
+          "Microsoft.EntityFrameworkCore.Proxies": "3.1.0",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.0"
+        },
+        "runtime": {
+          "Domain.Application.dll": {}
+        }
+      },
       "Domain.Application.Dto/1.0.0": {
         "dependencies": {
           "Domain.Common": "1.0.0"
@@ -695,6 +708,7 @@
       "Domain.Shop.Dto/1.0.0": {
         "dependencies": {
           "Domain.Common": "1.0.0",
+          "Infrastructure.Database": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.7"
         },
         "runtime": {
@@ -1237,6 +1251,11 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "Domain.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Domain.Application.Dto/1.0.0": {
       "type": "project",

@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.7" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="3.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
     <PackageReference Include="NLog" Version="4.7.2" />
@@ -19,6 +20,7 @@
     <Folder Include="Areas\Administrator\Data\" />
     <Folder Include="Areas\Administrator\Helpers\" />
     <Folder Include="Areas\Administrator\Models\" />
+    <Folder Include="wwwroot\imageUpload\" />
     <Folder Include="wwwroot\js\bootstrap\" />
   </ItemGroup>
 

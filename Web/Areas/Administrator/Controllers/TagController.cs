@@ -17,9 +17,11 @@ namespace Web.Areas.Administrator.Controllers
     public class TagController : BaseController
     {
         private readonly ITagRepository _tagRepository;
-        public TagController(ITagRepository tagRepository)
+        private readonly IProductTagRepository _productTagRepository;
+        public TagController(ITagRepository tagRepository, IProductTagRepository productTagRepository)
         {
             _tagRepository = tagRepository;
+            _productTagRepository = productTagRepository;
         }
         public ActionResult Index()
         {
@@ -47,7 +49,7 @@ namespace Web.Areas.Administrator.Controllers
 
                     return RedirectToAction("Index");
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     return View();
                 }
@@ -61,11 +63,20 @@ namespace Web.Areas.Administrator.Controllers
             try
             {
                 Tag tag = _tagRepository.Get(id);
+                var productTagList = _productTagRepository.GetProductTagViewModelsByTagId(id).Select(s => s.Id).ToList();
+                if (productTagList != null && productTagList.Count > 0)
+                {
+                    foreach (var item in productTagList)
+                    {
+                        _productTagRepository.Delete(item);
+                    }
+                }
+                _productTagRepository.Save(requestContext);
                 _tagRepository.Delete(tag);
                 _tagRepository.Save(requestContext);
                 return true;
             }
-            catch (Exception )
+            catch (Exception)
             {
                 return false;
             }

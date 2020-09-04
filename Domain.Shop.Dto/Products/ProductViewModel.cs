@@ -36,12 +36,19 @@ namespace Domain.Shop.Dto.Products
 		public string CategoryId { get; set; }
 		[DisplayName("Danh mục")]
 		public string CategoryName { get; set; }
+	
 		[DisplayName("Loại giá")]
+		[Required]
 		public string PriceType { get; set; }
 		[DisplayName("Giá")]
+		[Required]
 		public long? Price { get; set; }
+		public double? Star { get; set; }
 		[DisplayName("Ảnh sản phẩm")]
-		public List<IFormFile>? ProductImages { get; set; }
-		public List<string>? DisplayImages { get; set; }
+		public List<IFormFile> ProductImages { get; set; }
+		
+		public List<string> DisplayImages { get; set; }
+		public List<string> TagList { get; set; }
+
 	}
 }

@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain.Application.Dto\Domain.Application.Dto.csproj" />
+    <ProjectReference Include="..\Domain.Application\Domain.Application.csproj" />
     <ProjectReference Include="..\Domain.Shop.Dto\Domain.Shop.Dto.csproj" />
     <ProjectReference Include="..\Infrastructure.Database\Infrastructure.Database.csproj" />
   </ItemGroup>

@@ -63,6 +63,82 @@
         }
       }
     },
+    "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj",
+        "projectName": "Domain.Application",
+        "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj",
+        "packagesPath": "C:\\Users\\tuanhai\\.nuget\\packages\\",
+        "outputPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tuanhai\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application.Dto\\Domain.Application.Dto.csproj": {
+                "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application.Dto\\Domain.Application.Dto.csproj"
+              },
+              "D:\\PROJECT-TTS-D6\\BlogManagement\\Infrastructure.Database\\Infrastructure.Database.csproj": {
+                "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Infrastructure.Database\\Infrastructure.Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Common\\Domain.Common.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -156,6 +232,9 @@
             "projectReferences": {
               "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Common\\Domain.Common.csproj": {
                 "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Common\\Domain.Common.csproj"
+              },
+              "D:\\PROJECT-TTS-D6\\BlogManagement\\Infrastructure.Database\\Infrastructure.Database.csproj": {
+                "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Infrastructure.Database\\Infrastructure.Database.csproj"
               }
             }
           }
@@ -221,6 +300,9 @@
             "projectReferences": {
               "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application.Dto\\Domain.Application.Dto.csproj": {
                 "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application.Dto\\Domain.Application.Dto.csproj"
+              },
+              "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj": {
+                "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj"
               },
               "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Shop.Dto\\Domain.Shop.Dto.csproj": {
                 "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Shop.Dto\\Domain.Shop.Dto.csproj"

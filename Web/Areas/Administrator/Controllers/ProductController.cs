@@ -29,12 +29,18 @@ namespace Web.Areas.Administrator.Controllers
         private readonly IProductTypeRepository _productTypeRepository;
         private readonly IMaterialRepository _materialRepository;
         private readonly ICategoryRepository _categoryRepository;
+        private readonly ITagRepository _tagRepository;
+        private readonly IProductTagRepository _productTagRepository;
+        private readonly IAccountRepository accountRepository;
+        private readonly IProductReViewRepository productReViewRepository;
         private readonly IProductImageRepository _productImageRepository;
         private readonly IWebHostEnvironment _webHostEnvironment;
         private readonly IConfiguration _config;
         public ProductController(IProductRepository productRepository, IProductTypeRepository productTypeRepository,
             IMaterialRepository materialRepository, ICategoryRepository categoryRepository,
-            IWebHostEnvironment webHostEnvironment, IConfiguration config, IProductImageRepository productImageRepository)
+            IWebHostEnvironment webHostEnvironment, IConfiguration config, IProductImageRepository productImageRepository,
+            ITagRepository tagRepository, IProductTagRepository productTagRepository,
+            IAccountRepository accountRepository, IProductReViewRepository productReViewRepository)
         {
             _config = config;
             _webHostEnvironment = webHostEnvironment;
@@ -42,7 +48,11 @@ namespace Web.Areas.Administrator.Controllers
             _productRepository = productRepository;
             _materialRepository = materialRepository;
             _categoryRepository = categoryRepository;
+            _productTagRepository = productTagRepository;
+            this.accountRepository = accountRepository;
+            this.productReViewRepository = productReViewRepository;
             _productImageRepository = productImageRepository;
+            _tagRepository = tagRepository;
         }
         public ActionResult Index()
         {
@@ -72,6 +82,7 @@ namespace Web.Areas.Administrator.Controllers
             }
             else
             {
+                var tagRepository = _tagRepository.All;
                 var productTypeRepository = _productTypeRepository.All;
                 var categoryRepository = _categoryRepository.All;
                 var materialRepository = _materialRepository.All;
@@ -90,7 +101,11 @@ namespace Web.Areas.Administrator.Controllers
                     Text = p.MaterialName,
                     Value = p.Id
                 }).ToList();
-
+                ViewBag.tagRepository = tagRepository.Select(p => new SelectListItem
+                {
+                    Text = p.Name,
+                    Value = p.Id
+                }).ToList();
                 var priceTypeList = new List<SelectListItem>();
                 foreach (int priceType in Enum.GetValues(typeof(PriceType)))
                 {
@@ -170,13 +185,27 @@ namespace Web.Areas.Administrator.Controllers
                             {
                                 Id = Guid.NewGuid().ToString(),
                                 ProductId = ProductId,
-                                Url = image
+                                Url = image,
+                                CreateAt = DateTime.UtcNow
                             });
                         }
                         _productImageRepository.Save(requestContext);
                     }
+                    if (model.TagList != null && model.TagList.Count > 0)
+                    {
+                        foreach (var item in model.TagList)
+                        {
+                            _productTagRepository.Add(new ProductTag()
+                            {
+                                Id = Guid.NewGuid().ToString(),
+                                ProductId = ProductId,
+                                TagId = item
+                            });
+                        }
+                    }
+                    _productTagRepository.Save(requestContext);
                 }
-                catch (Exception )
+                catch (Exception)
                 {
                     SetComboData();
                     return View();
@@ -187,27 +216,139 @@ namespace Web.Areas.Administrator.Controllers
             return View();
         }
 
+        public ActionResult Update(string id)
+        {
+            var model = _productRepository.GetProductViewModelById(id);
+            SetComboData();
+            ViewBag.checkedTag = _productTagRepository.GetProductTagViewModelsByProductId(id).Select(s => s.TagId).ToList();
+            if (model == null)
+            {
+
+                return View();
+            }
+            else
+            {
+                return View(model);
+            }
+        }
+        [HttpPost]
+        public ActionResult Update(ProductViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    List<string> productImageList = ProcessUploadedFile(model);
+                    var product = _productRepository.GetProductById(model.Id);
+                    PropertyCopy.Copy(model, product);
+                    _productRepository.Update(product);
+                    _productRepository.Save(requestContext);
+                    if (productImageList != null && productImageList.Count > 0)
+                    {
+                        foreach (var image in productImageList)
+                        {
+                            _productImageRepository.Add(new ProductImage()
+                            {
+                                Id = Guid.NewGuid().ToString(),
+                                ProductId = model.Id,
+                                Url = image,
+                                CreateAt = DateTime.UtcNow
+                            });
+                        }
+                        _productImageRepository.Save(requestContext);
+                    }
+                    var listProductTag = _productTagRepository.GetProductTagViewModelsByProductId(model.Id).Select(s => s.TagId).ToList();
+                    if (model.TagList != null && model.TagList.Count > 0)
+                    {
+                        foreach (var item in model.TagList)
+                        {
+                            if (!listProductTag.Contains(item))
+                            {
+                                _productTagRepository.Add(new ProductTag()
+                                {
+                                    Id = Guid.NewGuid().ToString(),
+                                    ProductId = model.Id,
+                                    TagId = item
+                                });
+                            }
+                        }
+                        _productTagRepository.Save(requestContext);
+                        if (listProductTag != null && listProductTag.Count > 0)
+                        {
+                            foreach (var item in listProductTag)
+                            {
+                                if (!model.TagList.Contains(item))
+                                {
+                                    DeleteProductTag(model.Id, item);
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (listProductTag != null && listProductTag.Count > 0)
+                        {
+                            foreach (var tagId in listProductTag)
+                            {
+                                DeleteProductTag(model.Id, tagId);
+                            }
+                        }
+                    }
+                }
+                catch (Exception )
+                {
+                    SetComboData();
+                    return View();
+                }
+
+                return RedirectToAction("Index");
+            }
+            SetComboData();
+            return View();
+        }
         [HttpPost]
         public bool Delete(string id)
         {
             try
             {
                 Product product = _productRepository.Get(id);
-                if (product.ProductImages != null && product.ProductImages.Count > 0)
+                var ProductImageList = _productImageRepository.All.Where(x => x.ProductId == id).ToList();
+                var ProductTag = _productTagRepository.GetProductTagViewModelsByProductId(id).Select(s => s.TagName).ToList();
+                if (ProductImageList != null && ProductImageList.Count > 0)
                 {
-                    foreach (var image in product.ProductImages)
+                    foreach (var image in ProductImageList)
                     {
-                        _productImageRepository.Delete(image);
+                        DeleteImageAndFolder(image.Id, image.Url.Split("\\")[0]);
                     }
                 }
-                _productImageRepository.Save(requestContext);
+                if (ProductTag != null && ProductTag.Count > 0)
+                {
+                    foreach (var item in ProductTag)
+                    {
+                        DeleteProductTag(id, item);
+                    }
+                }
                 _productRepository.Delete(product);
                 _productRepository.Save(requestContext);
                 return true;
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 return false;
+            }
+        }
+
+        public void DeleteProductTag(string productId, string tagId)
+        {
+            try
+            {
+                string id = _productTagRepository.All.Where(w => w.TagId == tagId && w.ProductId == productId).Select(s => s.Id).FirstOrDefault();
+                ProductTag productTag = _productTagRepository.Get(id);
+                _productTagRepository.Delete(productTag);
+                _productTagRepository.Save(requestContext);
+            }
+            catch (Exception )
+            {
             }
         }
 
@@ -219,52 +360,49 @@ namespace Web.Areas.Administrator.Controllers
                 try
                 {
                     string imageProductId = _productImageRepository.All.Where(m => m.Url.StartsWith(image)).Select(s => s.Id).FirstOrDefault();
-                    ProductImage productImage = _productImageRepository.Get(imageProductId);
-                    _productImageRepository.Delete(productImage);
-                    _productImageRepository.Save(requestContext);
-                    string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "imageUpload");
-
-                    Directory.Delete(Path.Combine(uploadsFolder, image), true);
+                    DeleteImageAndFolder(imageProductId, image);
                     return true;
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     return false;
                 }
             }
             return false;
         }
-        public ActionResult Update(string id)
+        public void DeleteImageAndFolder(string imageId, string folderName)
         {
-            var model = _productRepository.GetProductViewModelById(id);
-            if (model == null)
+            ProductImage productImage = _productImageRepository.Get(imageId);
+            _productImageRepository.Delete(productImage);
+            _productImageRepository.Save(requestContext);
+            string uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "imageUpload");
+            Directory.Delete(Path.Combine(uploadsFolder, folderName), true);
+        }
+        public ActionResult Review(string id)
+        {
+            var model = productReViewRepository.GetProductReviewViewModels(id);
+            foreach (var item in model)
             {
-                return View();
+                item.Customer = accountRepository.GetCustomerViewModel(item.CustomerId);
+                item.Product = _productRepository.GetProductViewModelById(item.ProductId);
             }
-            else
-            {
-                return View(model);
-            }
+            return View(model);
         }
         [HttpPost]
-        public ActionResult Update(ProductImageViewModel model)
+        public bool DeleteReview(string id)
         {
-            if (ModelState.IsValid)
+            try
             {
-                try
-                {
-                    var product = _productRepository.GetProductById(model.Id);
-                    PropertyCopy.Copy(model, product);
-                    _productRepository.Update(product);
-                    _productRepository.Save(requestContext);
-                }
-                catch (Exception e)
-                {
-                    return View();
-                }
-                return RedirectToAction("Index");
+                var productRv = productReViewRepository.All.Where(p => p.Id == id).FirstOrDefault();
+                productReViewRepository.Delete(productRv);
+                productReViewRepository.Save();
+                return true;
             }
-            return View();
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
         }
     }
 }

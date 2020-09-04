@@ -86,12 +86,12 @@
 				orderable: false,
 				data: function (data) {
 					var updateButton = settings.defaultAction.update ? `
-						<a role="button" class="btn btn-info" href="${settings.defaultAction.update}/${data.Id}">
+						<a role="button" class="btn btn-info" href="${settings.defaultAction.update}/${data.id}">
 							<i class="fas fa-edit"></i>
 						</a>
 					` : '';
 					var deleteButton = settings.defaultAction.delete ? `
-						<a role="button" class="btn btn-danger" href="#" onclick="CoreTableDeleteRow('${tableId}','${settings.defaultAction.delete}','${data.Id}')">
+						<a role="button" class="btn btn-danger" href="#" onclick="CoreTableDeleteRow('${tableId}','${settings.defaultAction.delete}','${data.id}')">
 							<i class="fas fa-trash"></i>
 						</a>
 					`: '';

@@ -16,5 +16,6 @@ namespace Domain.Application.Dto.Login
 		public string Password { get; set; }
 		[DisplayName("Ghi nhớ đăng nhập")]
 		public bool RememberMe { get; set; }
+		public string returnUrl { get; set; }
 	}
 }

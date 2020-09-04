@@ -1,4 +1,5 @@
-﻿using Infrastructure.Database.Entities;
+﻿using Domain.Application.Entities;
+using Infrastructure.Database.Entities;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -36,6 +37,7 @@ namespace Domain.Shop.Entities
 		public string District { get; set; }
 		[Column("PROVINCE")]
 		public string Province { get; set; }
+		
 
 		public virtual ICollection<CustomerFeedback> CustomerFeedbacks { get; set; }
 		public virtual ICollection<ProductReview> ProductReviews { get; set; }

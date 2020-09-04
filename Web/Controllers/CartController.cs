@@ -1,30 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Domain.Shop.Entities;
+using Domain.Shop.Dto.CartProduct;
+using Domain.Shop.Dto.Products;
+using Domain.Shop.Dto.ShoppingCart;
 using Domain.Shop.IRepositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using Shop.Application;
-using Web.Models;
 
 namespace Web.Controllers
 {
+   
     public class CartController : Controller
     {
         private readonly IProductRepository productRepository;
-        private readonly ShoppingCart cart;
+        private readonly IShoppingCartRepository shoppingCart;
         IServiceProvider services;
-     
+        private readonly ICartRepository cartRepository;
 
-        public CartController(IProductRepository productRepository, ShoppingCart cart, IServiceProvider services)
+        public CartController(IProductRepository productRepository,IShoppingCartRepository shoppingCart, 
+            IServiceProvider services, ICartRepository cartRepository)
         {
             this.productRepository = productRepository;
-            this.cart = cart;
+            this.shoppingCart = shoppingCart;
             this.services = services;
-
+            this.cartRepository = cartRepository;
         }
         public string GetCart(IServiceProvider service)
         {
@@ -32,9 +33,9 @@ namespace Web.Controllers
             try
             {
                 HttpRequest cookie = service.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Request;
-                var context = service.GetService<ShopDBContext>();
                 string cartId = cookie.Cookies["cardId"] ?? Guid.NewGuid().ToString();
                 CookieOptions option = new CookieOptions();
+                option.Expires = DateTime.Now.AddMonths(1);
                 Response.Cookies.Append("cardId", cartId, option);
                 return cartId;
             }
@@ -45,35 +46,82 @@ namespace Web.Controllers
             }
         }
 
-        public ViewResult ShoppingCart()
-        {
-            cart.Id = GetCart(services);
-            var items = cart.GetCartProducts(cart.Id);
-            cart.cartProducts = items;
-            cart.Total = cart.GetShoppingCartTotal();
+        public ViewResult ShoppingCart() {
+
+            string cartId = GetCart(services);
+            List<CartProductViewModel> CartProductViewModels = new List<CartProductViewModel>();
+            
+            foreach (var item in shoppingCart.GetCartProducts(cartId))
+            {
+                var cartProductViewModel = new CartProductViewModel() { 
+                    Id = item.Id,
+                    CartId = item.CartId,
+                    Cart = cartRepository.GetCartViewModel(item.CartId),
+                    ProductId = item.ProductId,
+                    Product = productRepository.GetProductViewModelById(item.ProductId),
+                    Price = item.Price,
+                    PriceType = item.PriceType,
+                    Quantity = item.Quantity,
+                    Total = item.Total
+                };
+                CartProductViewModels.Add(cartProductViewModel);
+
+            }
+            var cart = new ShoppingCart()
+            {
+                Id = cartId,
+                cartProducts = CartProductViewModels,
+                Total = shoppingCart.GetShoppingCartTotal(cartId)
+            };
+          
             var model = new ShoppingCartViewModel()
             {
                 ShoppingCart = cart,
             };
             return View(model);
         }
-        public ActionResult AddToShoppingCart(string id)
+        [HttpPost]
+        public bool AddToShoppingCart(string id)
         {
-            string cartId = GetCart(services);
-            var product = productRepository.All.Where(d => d.Id == id).FirstOrDefault();
-            if (product != null)
+            try
             {
-                cart.AddToCart(product, cartId);
-                return RedirectToAction("ShoppingCart");
+                string cartId = GetCart(services);
+                var product = productRepository.All.Where(d => d.Id == id).FirstOrDefault();
+                if (product != null)
+                {      
+                    shoppingCart.AddToCart(product, cartId);
+                    return true;
+                }
+                return false;
             }
-            return View();
+            catch (Exception)
+            {
+                return false;
+                throw;
+            }
+           
+        }
+        public ActionResult AddToShoppingCartInDetail(ProductViewModel model, string quantity)
+        {
+           
+                string cartId = GetCart(services);
+                var product = productRepository.All.Where(d => d.Id == model.Id).FirstOrDefault();
+                if (product != null)
+                {
+                    if (quantity != null)
+                    {
+                        shoppingCart.AddToCartWithQuantity(product, cartId, Convert.ToInt32(quantity));
+                    }
+                    return RedirectToAction("ShoppingCart");
+                }
+                return View("Detail","Home");
         }
         [HttpPost]
         public bool Delete(string id)
         {
             try
             {
-                cart.RemoveFromCart(productRepository.All.FirstOrDefault(d => d.Id == id), GetCart(services));
+                shoppingCart.RemoveFromCart(productRepository.All.FirstOrDefault(d => d.Id == id), GetCart(services));
                 return true;
             }
             catch (Exception)
@@ -86,7 +134,7 @@ namespace Web.Controllers
         {
             try
             {
-                cart.UpdateQuantityInCart(id, quantity,GetCart(services));
+                shoppingCart.UpdateQuantityInCart(id, Convert.ToInt32(quantity),GetCart(services));
                 return true;
             }
             catch (Exception)
@@ -96,5 +144,6 @@ namespace Web.Controllers
             }
             
         }
+       
     }
 }

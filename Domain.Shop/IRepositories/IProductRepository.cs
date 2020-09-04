@@ -12,5 +12,10 @@ namespace Domain.Shop.IRepositories
         IEnumerable<ProductViewModel> GetProductViewModels();
         ProductViewModel GetProductViewModelById(string id);
         Product GetProductById(string id);
+
+        IEnumerable<ProductViewModel> GetProductViewModelsByOrder(int value);
+        IEnumerable<ProductViewModel> GetProductViewModelsByCategory(string categoryName);
+        IEnumerable<ProductViewModel> GetProductViewModelsByPrice(int min, int max);
+        IEnumerable<ProductViewModel> SortProductViewModels(string value);
     }
 }

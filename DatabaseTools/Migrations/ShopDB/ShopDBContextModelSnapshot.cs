@@ -266,6 +266,10 @@ namespace DatabaseTools.Migrations.ShopDB
                         .HasColumnType("character varying(50)")
                         .HasMaxLength(50);
 
+                    b.Property<bool>("Bought")
+                        .HasColumnName("BOUGHT")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("CartId")
                         .HasColumnName("CART_ID")
                         .HasColumnType("character varying(50)")
@@ -530,6 +534,120 @@ namespace DatabaseTools.Migrations.ShopDB
                     b.ToTable("CUSTOMER_FEEDBACK_IMAGE");
                 });
 
+            modelBuilder.Entity("Domain.Shop.Entities.District", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnName("ID")
+                        .HasColumnType("character varying(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnName("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("ProvinceId")
+                        .HasColumnType("character varying(50)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProvinceId");
+
+                    b.ToTable("DISTRICT");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            Name = "Ba Đình",
+                            ProvinceId = "1"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            Name = "Bắc Từ Liêm",
+                            ProvinceId = "1"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            Name = "Cầu Giấy",
+                            ProvinceId = "1"
+                        },
+                        new
+                        {
+                            Id = "4",
+                            Name = "Đống Đa",
+                            ProvinceId = "1"
+                        },
+                        new
+                        {
+                            Id = "5",
+                            Name = "Hà Đông",
+                            ProvinceId = "1"
+                        },
+                        new
+                        {
+                            Id = "6",
+                            Name = "Hải Châu",
+                            ProvinceId = "2"
+                        },
+                        new
+                        {
+                            Id = "7",
+                            Name = "Cẩm Lệ",
+                            ProvinceId = "2"
+                        },
+                        new
+                        {
+                            Id = "8",
+                            Name = "Liên Chiểu",
+                            ProvinceId = "2"
+                        },
+                        new
+                        {
+                            Id = "9",
+                            Name = "Ngũ Hành Sơn",
+                            ProvinceId = "2"
+                        },
+                        new
+                        {
+                            Id = "10",
+                            Name = "Sơn Trà",
+                            ProvinceId = "2"
+                        },
+                        new
+                        {
+                            Id = "11",
+                            Name = "Quận 1",
+                            ProvinceId = "3"
+                        },
+                        new
+                        {
+                            Id = "12",
+                            Name = "Quận 2",
+                            ProvinceId = "3"
+                        },
+                        new
+                        {
+                            Id = "13",
+                            Name = "Quận 3",
+                            ProvinceId = "3"
+                        },
+                        new
+                        {
+                            Id = "14",
+                            Name = "Quận 4",
+                            ProvinceId = "3"
+                        },
+                        new
+                        {
+                            Id = "15",
+                            Name = "Quận 5",
+                            ProvinceId = "3"
+                        });
+                });
+
             modelBuilder.Entity("Domain.Shop.Entities.Material", b =>
                 {
                     b.Property<string>("Id")
@@ -787,6 +905,40 @@ namespace DatabaseTools.Migrations.ShopDB
                     b.ToTable("PRODUCT_TYPES");
                 });
 
+            modelBuilder.Entity("Domain.Shop.Entities.Province", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnName("ID")
+                        .HasColumnType("character varying(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnName("Name")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PROVINCE");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            Name = "Hà Nội"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            Name = "Đà Nẵng"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            Name = "Hồ Chí Minh"
+                        });
+                });
+
             modelBuilder.Entity("Domain.Shop.Entities.ShippingAddress", b =>
                 {
                     b.Property<string>("Id")
@@ -994,6 +1146,13 @@ namespace DatabaseTools.Migrations.ShopDB
                     b.HasOne("Domain.Shop.Entities.CustomerFeedback", null)
                         .WithOne("CustomerFeedbackImage")
                         .HasForeignKey("Domain.Shop.Entities.CustomerFeedbackImage", "CustomerFeedbackId");
+                });
+
+            modelBuilder.Entity("Domain.Shop.Entities.District", b =>
+                {
+                    b.HasOne("Domain.Shop.Entities.Province", "Province")
+                        .WithMany("Districts")
+                        .HasForeignKey("ProvinceId");
                 });
 
             modelBuilder.Entity("Domain.Shop.Entities.Product", b =>

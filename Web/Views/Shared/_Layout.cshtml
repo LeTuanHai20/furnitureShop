@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <!-- Basic page needs
@@ -64,24 +65,51 @@
                             <div class="header-user">
                                 <ul>
                                     <li>
-                                        <a href="my-account.html" class="smooth" title="">
+                                        <a asp-action="Index" asp-controller="Account" asp-area="" class="smooth" title="">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            My Account
+                                            Tài khoản
                                         </a>
                                     </li>
                                     <li>
                                         <a asp-action="ShoppingCart" asp-controller="Cart" asp-area="" class="smooth" title="">
                                             <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                            Checkout
+                                            Giỏ hàng
                                         </a>
                                     </li>
                                     <li>
-                                        <a asp-action="Index" asp-controller="Login"  class="smooth" title="">
+                                        <a asp-action="HomeOrder" asp-controller="Order" asp-area="" class="smooth" title="">
                                             <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                                            Login
+                                            Thanh toán
                                         </a>
                                     </li>
-                                </ul>
+                                    @if (Context.User.Identity.IsAuthenticated)
+                                    {
+                                        <li>
+                                            <a asp-action="Logout" asp-controller="Login" class="smooth" title="">
+                                                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                Đăng xuất
+                                            </a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a asp-action="Index" asp-controller="Login" class="smooth" title="">
+                                                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                Đăng nhập
+                                            </a>
+                                        </li>
+                                    }
+                                    @if (Context.User.Identity.IsAuthenticated && User.Identity.Name == "admin")
+                                    {
+                                        <li>
+                                            <a  asp-area="Administrator" asp-controller="Default" asp-action="Index" class="smooth" title="">
+                                                <i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                Quản trị
+                                            </a>
+                                        </li>
+                                    }
+                                    </ul>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-3">
@@ -181,7 +209,7 @@
                                                                                                 <div>
                                                                                                     <ul class="row-list">
                                                                                                         @await Component.InvokeAsync("BlogCategory")
-                                                                                                        
+
                                                                                                     </ul>
                                                                                                 </div>
                                                                                             </div>
@@ -194,7 +222,7 @@
                                                                     </div>
                                                                 </div>
                                                             </li>
-                                                            
+
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -208,27 +236,27 @@
                     <div class="header-bottom-right">
                         <ul>
                             <li>
-                                <a href="#" class="smooth" >
+                                <a href="#" class="smooth">
                                     <i class="fa fa-facebook" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="smooth" >
+                                <a href="#" class="smooth">
                                     <i class="fa fa-wifi" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="smooth" >
+                                <a href="#" class="smooth">
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="smooth" >
+                                <a href="#" class="smooth">
                                     <i class="fa fa-google-plus" aria-hidden="true"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="smooth" >
+                                <a href="#" class="smooth">
                                     <i class="fa fa-podcast" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -242,17 +270,15 @@
 
         <div class="breadcrumbs">
             <div class="container">
-                <h1 class="category-name" style="color:black">LIVING ROOM</h1>
+                <h1 class="category-name" style="color:black">@ViewData["Name"]</h1>
                 <ul class="breadcrumb">
                     <li>
-                        <a href="#" class="smooth"  style="color:black">Home</a>
+                        <a href="#" class="smooth" style="color:black">@ViewData["Controller"] ></a>
                     </li>
                     <li>
-                        <a href="#" class="smooth" style="color:black">Listing Grid</a>
+                        <a href="#" class="smooth" style="color:black">@ViewData["Action"]</a>
                     </li>
-                    <li>
-                        <a href="#" class="smooth"  style="color:black">Living Room</a>
-                    </li>
+                   
                 </ul>
             </div>
         </div>
@@ -290,19 +316,19 @@
                                     <h3 class="footer-title">our service</h3>
                                     <ul class="footer-list">
                                         <li>
-                                            <a href="#" class="smooth" >Delivery Information</a>
+                                            <a href="#" class="smooth">Delivery Information</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >Returns</a>
+                                            <a href="#" class="smooth">Returns</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >Terms & Conditions</a>
+                                            <a href="#" class="smooth">Terms & Conditions</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >Shipping & Refund</a>
+                                            <a href="#" class="smooth">Shipping & Refund</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >Specials</a>
+                                            <a href="#" class="smooth">Specials</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -312,19 +338,19 @@
                                     <h3 class="footer-title">Extras</h3>
                                     <ul class="footer-list">
                                         <li>
-                                            <a href="#" class="smooth" >Contact Us</a>
+                                            <a href="#" class="smooth">Contact Us</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >return</a>
+                                            <a href="#" class="smooth">return</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >special</a>
+                                            <a href="#" class="smooth">special</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >brands</a>
+                                            <a href="#" class="smooth">brands</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >gift voucher</a>
+                                            <a href="#" class="smooth">gift voucher</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -334,16 +360,16 @@
                                     <h3 class="footer-title">my account</h3>
                                     <ul class="footer-list">
                                         <li>
-                                            <a href="#" class="smooth" >my order</a>
+                                            <a href="#" class="smooth">my order</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >My credit slips</a>
+                                            <a href="#" class="smooth">My credit slips</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >My addresses</a>
+                                            <a href="#" class="smooth">My addresses</a>
                                         </li>
                                         <li>
-                                            <a href="#" class="smooth" >My personal info</a>
+                                            <a href="#" class="smooth">My personal info</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -422,7 +448,7 @@
                             </div>
                             <div class="col-lg-12 col-sm-12 col-xs-12">
                                 <div class="copyright text-center">
-                                    Furnicom HTML © 2019 Demo Store. All Rights Reserved. Designed by <a href="https://www.smartaddons.com/" target="_blank" class="smooth" >SmartAddons.com</a>
+                                    Furnicom HTML © 2019 Demo Store. All Rights Reserved. Designed by <a href="https://www.smartaddons.com/" target="_blank" class="smooth">SmartAddons.com</a>
                                 </div>
                             </div>
                         </div>

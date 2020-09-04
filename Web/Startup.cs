@@ -1,12 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Domain.Application;
 using Infrastructure.Common;
 using Infrastructure.Web;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -31,10 +36,14 @@ namespace Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews()
-                .AddJsonOptions(options => {
-                    options.JsonSerializerOptions.PropertyNamingPolicy = null;
-                });
-
+                 .AddNewtonsoftJson()
+                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+               .AddJsonOptions(options =>
+               {
+                   options.JsonSerializerOptions.PropertyNamingPolicy = null;
+                   options.JsonSerializerOptions.WriteIndented = true;
+               });
+          
             services.AddDbContext<ApplicationDBContext>(opt =>
                 opt.UseNpgsql(Configuration.GetConnectionString("NpgsqlConection"), b => b.MigrationsAssembly("DatabaseTools"))
             );
@@ -52,7 +61,11 @@ namespace Web
             services.AddHostedService<QueuedHostedService>();
             services.AddSingleton<IBackgroundTaskQueue, BackgroundTaskQueue>();
             services.AddScoped<AppSettings>();
-            services.AddScoped<ShoppingCart>();
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.LoginPath = "/Login/Index/";
+            });
            
         }
 
@@ -68,9 +81,9 @@ namespace Web
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseStaticFiles();
+            app.UseStaticFiles();   
             app.UseRouting();
-           
+            app.UseAuthentication();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {

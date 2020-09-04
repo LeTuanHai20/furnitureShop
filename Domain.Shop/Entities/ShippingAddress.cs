@@ -23,7 +23,6 @@ namespace Domain.Shop.Entities
 		public string PhoneNo { get; set; }
 		[Column("ADDRESS")]
 		public string Address { get; set; }
-
 		[Column("DISTRICT")]
 		public string District { get; set; }
 		[Column("PROVINCE")]

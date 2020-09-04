@@ -4,9 +4,8 @@ using Domain.Shop.Repositories;
 using Infrastructure.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Text;
+using Domain.Shop;
+
 
 namespace Shop.Application
 {
@@ -32,6 +31,8 @@ namespace Shop.Application
         public DbSet<ShopSetting> ShopSetting { get; set; }
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ShippingAddress> ShippingAddress { get; set; }
+        public DbSet<Province> Provinces { get; set; }
+        public DbSet<District> Districts { get; set; }
 
         public static void ConfigureServices(IServiceCollection services)
 		{
@@ -47,7 +48,18 @@ namespace Shop.Application
             services.AddScoped<IShopAddressRepository, ShopAddressRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductImageRepository, ProductImageRepository>();
-          
+            services.AddScoped<IProductTagRepository, ProductTagRepository>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IProvinceRepository, ProvinceRepository>();
+            services.AddScoped<IDictrictRepository, DictrictRepository>();
+            services.AddScoped<ICartRepository, CartRepository>();
+            services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>();
+            services.AddScoped<IProductReViewRepository, ProductReViewRepository>();
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Seed();
         }
     }
 

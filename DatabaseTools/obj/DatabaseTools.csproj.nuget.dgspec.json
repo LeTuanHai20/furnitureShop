@@ -325,6 +325,9 @@
             "projectReferences": {
               "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Common\\Domain.Common.csproj": {
                 "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Common\\Domain.Common.csproj"
+              },
+              "D:\\PROJECT-TTS-D6\\BlogManagement\\Infrastructure.Database\\Infrastructure.Database.csproj": {
+                "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Infrastructure.Database\\Infrastructure.Database.csproj"
               }
             }
           }
@@ -390,6 +393,9 @@
             "projectReferences": {
               "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application.Dto\\Domain.Application.Dto.csproj": {
                 "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application.Dto\\Domain.Application.Dto.csproj"
+              },
+              "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj": {
+                "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Application\\Domain.Application.csproj"
               },
               "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Shop.Dto\\Domain.Shop.Dto.csproj": {
                 "projectPath": "D:\\PROJECT-TTS-D6\\BlogManagement\\Domain.Shop.Dto\\Domain.Shop.Dto.csproj"

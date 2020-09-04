@@ -1,4 +1,4 @@
-﻿@model Web.Models.ShoppingCartViewModel
+﻿@model Domain.Shop.Dto.ShoppingCart.ShoppingCartViewModel
 
 @foreach (var item in Model.ShoppingCart.cartProducts)
 {
@@ -8,7 +8,14 @@
                 <tr>
                     <td class="product-item-image">
                         <a href="detail.html" class="" title="">
-                            <img src="~/imageUpload/@item.Product.ProductImages[0].Url" alt="" width="60" height="60" class="img-responsive">
+                            @if (@item.Product.DisplayImages.Any())
+                            {
+                                <img src="~/imageUpload/@item.Product.DisplayImages[0]??#" alt="" width="60" height="60" class="img-responsive">
+                            }
+                            else
+                            {
+                                <img src="#" alt="" width="60" height="60" class="img-responsive">
+                            }
                         </a>
                         <button class="remove-product-cart smooth">
                             <i class="fa fa-times"></i>
@@ -34,6 +41,6 @@
     <label class="float-right">@Model.ShoppingCart.Total $</label>
 </li>
 <li class="shopping-cart-checkout">
-    <a href="cart.html" class="smooth" title="">GO TO CART</a>
-    <a href="checkout.html" class="smooth" title="">CHECKOUT</a>
+    <a asp-action="ShoppingCart" asp-controller="Cart" asp-area="" class="smooth" title="">Giỏ hàng</a>
+    <a asp-action="HomeOrder" asp-controller="Order" asp-area="" class="smooth" title="">Mua ngay</a>
 </li>

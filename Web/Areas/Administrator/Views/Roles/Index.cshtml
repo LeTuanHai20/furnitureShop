@@ -65,15 +65,14 @@
 			]
 		});
     });
-    function Delete(id){
-		var r = confirm("Bạn có chắc chắn muốn xóa Người dùng này?");
-        if (r == true) {
+        function FilterByCategory(categoryName){
+		
             $.ajax(
             {
                 type: "POST",
-                url: '@Url.ActionLink("Delete", "Roles")',
-                data: {
-                    id: id
+                url: '@Url.ActionLink("Filter", "Home")',
+				data: {
+                        categoryName: categoryName
                 },
                 error: function (result) {
                     alert("error");
@@ -87,7 +86,7 @@
                     }
                 }
             });
-        }
+        
     }
 	</script>
 }

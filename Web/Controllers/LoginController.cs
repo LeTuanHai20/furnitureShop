@@ -1,41 +1,57 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Domain.Application.Dto.Login;
 using Domain.Application.Entities;
 using Domain.Application.IRepositories;
 using Domain.Application.Services;
 using Domain.Common.Security;
+using Domain.Shop.Entities;
 using Domain.Shop.IRepositories;
 using Infrastructure.Common;
 using Infrastructure.Web;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace Web.Controllers
 {
+	
 	public class LoginController : Controller
 	{
 		AuthService authService;
         private readonly IUserRepository userRepository;
         private readonly IMailerRepository mailer;
         private readonly ConfigurationCache configuration;
+        private readonly IRoleRepository roleRepository;
+        private readonly IAccountRepository accountRepository;
 
-        public LoginController(ILogger<LoginController> logger, AuthService authService, IUserRepository userRepository, IMailerRepository mailer, ConfigurationCache configuration )
+        public LoginController(ILogger<LoginController> logger, AuthService authService, IUserRepository userRepository, IMailerRepository mailer,
+			ConfigurationCache configuration ,IRoleRepository roleRepository, IAccountRepository accountRepository)
 		{
 			this.authService = authService;
             this.userRepository = userRepository;
             this.mailer = mailer;
             this.configuration = configuration;
+            this.roleRepository = roleRepository;
+            this.accountRepository = accountRepository;
         }
-		public IActionResult Index()
+		[HttpGet]
+		public IActionResult Index(string returnUrl)
 		{
-			return View();
+			LoginViewModel model = new LoginViewModel()
+			{
+				returnUrl  = returnUrl
+			};
+			return View(model);
 		}
 
 		[HttpPost]
-		public IActionResult Login(LoginViewModel model)
+		public async Task<IActionResult> Login(LoginViewModel model,string returnUrl)
 		{
 			if (ModelState.IsValid)
 			{
@@ -47,7 +63,32 @@ namespace Web.Controllers
 				}
 				string token = SecurityManager.GenerateToken(profile.id, profile.username, Request.Headers["User-Agent"].ToString());
 				ControllerContext.HttpContext.Response.Cookies.Append(SecurityManager._securityToken, token);
-				return RedirectToAction("Index", "Default", new { Area = "Administrator" });
+				var claims = new List<Claim>()
+				{
+					new Claim(ClaimTypes.Name, model.Username)
+				};
+				var claimsIdentity = new ClaimsIdentity(claims, "Login");
+				
+				await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
+				var exists = false;
+				foreach (var item in userRepository.GetUserViewModel(profile.id).Roles)
+                {
+					if(roleRepository.GetRoleViewModel(item).RoleName == "Quản trị hệ thống") 
+                    {
+						exists = true;
+						break;
+					}
+                }
+				
+				if(returnUrl != null)
+                {
+					return LocalRedirect(returnUrl);
+                } 
+				else if (exists)
+                {
+					return RedirectToAction("Index", "Default", new { Area = "Administrator" });
+				}
+				return RedirectToAction("Index", "Home");
 			}
 			return View("Index");
 		}
@@ -138,8 +179,16 @@ namespace Web.Controllers
 					User user = new User();
 					PropertyCopy.Copy(model, user);
 					user.Password = Security.EncryptPassword(model.Password);
+					Customer customer = new Customer()
+					{
+						Id = model.Id,
+						Email = model.Email
+					};
+
+					accountRepository.Add(customer);
 					userRepository.Add(user);
 					userRepository.Save();
+					accountRepository.Save();
 					return RedirectToAction("Index");
 				}
 				catch (Exception)
@@ -152,6 +201,11 @@ namespace Web.Controllers
 			return View();
 		}
 		#endregion
+		public async Task<RedirectToActionResult> Logout()
+        {
+			await HttpContext.SignOutAsync();
+			return RedirectToAction("Index","Home");
+        }
 	}
 }
 

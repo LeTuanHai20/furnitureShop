@@ -1,6 +1,9 @@
 ﻿@model IEnumerable<Domain.Shop.Dto.Products.ProductViewModel>
 @{
     ViewData["Title"] = "Home Page";
+    ViewData["Name"] = "Trang chủ";
+    ViewData["Controller"] = "Trang chủ";
+    ViewData["Action"] = "Danh sách sản phẩm";
 }
 
 <div class="product-list">
@@ -14,32 +17,7 @@
                         <div class="filter-box">
                             <h4 class="filter-box-title">CATEGORY</h4>
                             <div class="fillter-category">
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Hair Accessories</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Makeup</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Nail Care</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Therapeutic Supports</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Skin Care</p>
-                                </label>
-
+                                @await Component.InvokeAsync("ProductCategory")
                             </div>
                         </div>
                         <div class="filter-box">
@@ -55,7 +33,7 @@
                                             <label for="two">$</label>
                                             <input id="two">
                                         </div>
-                                        <button type="submit" class="hv-border-inline">SEARCH</button>
+                                        <button type="button" class="hv-border-inline btn btn-warning" onclick="SearchByPrice()">SEARCH</button>
                                     </div>
                                 </div>
                                 <div class="price-field">
@@ -65,198 +43,7 @@
 
                             </fieldset>
                         </div>
-                        <div class="filter-box">
-                            <h4 class="filter-box-title">MANUFACTURER</h4>
-                            <div class="fillter-category">
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>g plan (4)</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Duresta (2)</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Parker Knoll (10)</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>Collins & Hayes (7)</p>
-                                </label>
-                                <label class="choose clearfix">
-                                    <input type="radio" name="keyword">
-                                    <span class="radio-checked"></span>
-                                    <p>ercol (0)</p>
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="filter-box">
-                            <h4 class="filter-box-title">COLOR</h4>
-                            <div class="fillter-category fillter-color">
-                                <div class="table">
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="red"></span>
-                                        <p>Red</p>
-                                    </label>
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="blue"></span>
-                                        <p>blue</p>
-                                    </label>
-                                </div>
-                                <div class="table">
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="green"></span>
-                                        <p>green</p>
-                                    </label>
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="yellow"></span>
-                                        <p>yellow</p>
-                                    </label>
-                                </div>
-                                <div class="table">
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="orange"></span>
-                                        <p>orange</p>
-                                    </label>
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="pink"></span>
-                                        <p>pink</p>
-                                    </label>
-                                </div>
-                                <div class="table">
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="purple"></span>
-                                        <p>purple</p>
-                                    </label>
-                                    <label class="choose clearfix">
-                                        <input type="radio" name="keyword">
-                                        <span class="radio-checked" data-color="grey"></span>
-                                        <p>grey</p>
-                                    </label>
-                                </div>
-
-                            </div>
-                        </div>
                     </form>
-                </div>
-
-                <div class="aside-best-seller">
-                    <h3 class="aside-title">BEST SELLER</h3>
-                    <div class="deals-box product-info clearfix">
-                        <div class="product-image-right">
-                            <a href="detail.html" class="hv-radial">
-                                <img src="~/images/catalog/demo/products/product32.png" alt="">
-                            </a>
-                        </div>
-                        <div class="box">
-                            <h5 class="product-name"><a href="detail.html" class="smooth" title="">Aliquam eget leo faucibus</a></h5>
-                            <div class="rating">
-                                <div class="rating-box">
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="price">$215.00 <span class="price-old">$315.00</span></div>
-                        </div>
-                    </div>
-                    <div class="deals-box product-info clearfix">
-                        <div class="product-image-right">
-                            <a href="detail.html" class="hv-radial">
-                                <img src="~/images/catalog/demo/products/product31.png" alt="">
-                            </a>
-                        </div>
-                        <div class="box">
-                            <h5 class="product-name"><a href="detail.html" class="smooth" title="">Duis vitae moliS lorem</a></h5>
-                            <div class="rating">
-                                <div class="rating-box">
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="price">$115.00 <span class="price-old">$142.00</span></div>
-                        </div>
-                    </div>
-                    <div class="deals-box product-info clearfix">
-                        <div class="product-image-right">
-                            <a href="detail.html" class="hv-radial">
-                                <img src="~/images/catalog/demo/products/product33.png" alt="">
-                            </a>
-                        </div>
-                        <div class="box">
-                            <h5 class="product-name"><a href="detail.html" class="smooth" title="">Curabitur biben urnaet</a></h5>
-                            <div class="rating">
-                                <div class="rating-box">
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star fa-stack-1x"></i>
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                    <span class="fa fa-stack">
-                                        <i class="fa fa-star-o fa-stack-1x"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="price">$115.00 <span class="price-old">$142.00</span></div>
-                        </div>
-                    </div>
                 </div>
             </aside>
             <div class="col-lg-9 col-md-9">
@@ -265,7 +52,7 @@
                         <div class="col-lg-8 col-sm-8 col-xs-12 form-inline">
                             <div class="form-group sort-by">
                                 <label class="control-label">Sort-by</label>
-                                <select class="form-control">
+                                <select class="form-control sort">
                                     <option>Position Asc</option>
                                     <option>Position Desc</option>
                                     <option>Name (A - Z)</option>
@@ -278,7 +65,7 @@
                             </div>
                             <div class="form-group sort-by">
                                 <label class="control-label">Show</label>
-                                <select class="form-control">
+                                <select class="form-control target">
                                     <option>16</option>
                                     <option>10</option>
                                     <option>25</option>
@@ -300,45 +87,69 @@
                     </div>
                 </div>
                 <div class="product-list-view">
-                    <div class="row">
+                    <div class="row" id="list-product">
                         @foreach (var item in Model)
                         {
-                            <div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
-                                <div class="product-box clearfix">
-                                    <div class="product-image">
-                                        <a href="detail.html" class="c-img link-product">
-                                            <img src="~/imageUpload/@item.DisplayImages[0]" class="img-responsive" alt="" height="250px">
+                        <div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
+                            <div class="product-box clearfix">
+                                <div class="product-image">
+                                    <a  class="c-img link-product">
+                                        @if (item.DisplayImages.Any())
+                                        {
+                            <img src="~/imageUpload/@item.DisplayImages[0]" class="img-responsive" alt="" height="250"> }
+                        else
+                        {
+                            <img src="#" class="img-responsive" alt="" height="250">}
                                         </a>
                                         <a class="smooth quickview iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" target="_self" data-fancybox-type="iframe">
                                             <i class="fa fa-search" aria-hidden="true"></i>
                                         </a>
                                     </div>
                                     <div class="product-info">
-                                        <h4 class="product-name"><a href="detail.html" class="smooth" title="">@item.ProductName</a></h4>
+                                        <h4 class="product-name"><a asp-action="Detail" asp-controller="Home" asp-route-id="@item.Id" class="smooth" title="">@item.ProductName</a></h4>
                                         <div class="price">
-                                           @item.Price <span class="price-old">$142.00</span>
+                                           $ @item.Price<span class="price-old">$142.00</span>
                                         </div>
                                         <div class="rating">
                                             <div class="rating-box">
-                                                <span class="fa fa-stack">
-                                                    <i class="fa fa-star fa-stack-1x"></i>
-                                                    <i class="fa fa-star-o fa-stack-1x"></i>
-                                                </span>
-                                                <span class="fa fa-stack">
-                                                    <i class="fa fa-star fa-stack-1x"></i>
-                                                    <i class="fa fa-star-o fa-stack-1x"></i>
-                                                </span>
-                                                <span class="fa fa-stack">
-                                                    <i class="fa fa-star fa-stack-1x"></i>
-                                                    <i class="fa fa-star-o fa-stack-1x"></i>
-                                                </span>
-                                                <span class="fa fa-stack">
-                                                    <i class="fa fa-star fa-stack-1x"></i>
-                                                    <i class="fa fa-star-o fa-stack-1x"></i>
-                                                </span>
-                                                <span class="fa fa-stack">
-                                                    <i class="fa fa-star-o fa-stack-1x"></i>
-                                                </span>
+                                                @if (item.Star != null)
+                                                {
+                                                    @for (int i = 0; i < Math.Round(Convert.ToDecimal(item.Star)); i++)
+                                                    {
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star fa-stack-1x"></i>
+                                                            <i class="fa fa-star-o fa-stack-1x"></i>
+                                                        </span>
+                                                    }
+                                                    @for (int i = 5; i > Math.Round(Convert.ToDecimal(item.Star)); i--)
+                                                    {
+                                                        <span class="fa fa-stack">
+                                                            <i class="fa fa-star-o fa-stack-1x"></i>
+                                                        </span>
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star fa-stack-1x"></i>
+                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                    </span>
+                                                    <span class="fa fa-stack">
+                                                        <i class="fa fa-star-o fa-stack-1x"></i>
+                                                    </span>
+                                                }
                                             </div>
                                         </div>
                                         <div class="product-desc">
@@ -346,17 +157,10 @@
                                         </div>
                                     </div>
                                     <div class="button-group">
-                                        <button class="wishlist-btn smooth" onclick="window.location.href='compare.html'">
-                                            <i class="fa fa-retweet" aria-hidden="true"></i>
-                                        </button>
-                                        
-                                        <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 162px; " asp-action="AddToShoppingCart" asp-controller="Cart" asp-route-id="@item.Id"> ADD TO CART</a>
-                                        <button class="wishlist-btn smooth" onclick="window.location.href='wishlist.html'">
-                                            <i class="fa fa-heart" aria-hidden="true"></i>
-                                        </button>
+                                        <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 268px; " onclick="AddToCart('@item.Id')"> ADD TO CART</a>
                                     </div>
-                                </div>
                             </div>
+                        </div>
                         }
                     </div>
                 </div>
@@ -377,7 +181,7 @@
                             </div>
                             <div class="form-group sort-by">
                                 <label class="control-label">Show</label>
-                                <select class="form-control">
+                                <select class="form-control target">
                                     <option>16</option>
                                     <option>10</option>
                                     <option>25</option>
@@ -406,4 +210,336 @@
             </div>
         </div>
     </div>
+
 </div>
+
+@section Scripts
+{
+
+    <!-- page script -->
+    <script>
+
+        $(".target").change(function () {
+        $.ajax(
+        {
+            type: "GET",
+            url: '@Url.ActionLink("GetProducts", "Home")',
+            data: {
+                value: $(".target").val()
+            },
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            error: function (result) {
+                debugger;
+                alert("error");
+            },
+            success: function (result) {
+
+                $("div").remove(".product-layout");
+                if (result != null) {
+                    $.each(result.data, function (index, value) {
+                        var star = "";
+                        if (value.star != null)
+                        {
+                            for (let i = 0; i < Math.floor(value.star); i++)
+                                {
+                                star += "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                }
+                            for (let i = 5; i > Math.floor(value.star); i--)
+                                {
+                                    star += "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                }
+                            }
+                            else
+                           {
+                            star = "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                        }
+                        
+                        $('#list-product').append(`<div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
+                                <div class="product-box clearfix">
+                                    <div class="product-image">
+                                        <a href="detail.html" class="c-img link-product">
+                                                <img src="/imageUpload/${value.displayImages[0]}" class="img-responsive" alt="" height="250">
+                                        </a>
+                                        <a class="smooth quickview iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" target="_self" data-fancybox-type="iframe">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4 class="product-name"><a href="detail.html" class="smooth" title="">${value.productName}</a></h4>
+                                        <div class="price">
+                                            ${value.price} <span class="price-old">$142.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-box">
+                                             ${star}
+                                            </div>
+                                        </div>
+                                        <div class="product-desc">
+                                           ${value.description}
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                       <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 268px; "
+                                href="/Cart/AddToShoppingCart/${value.id}"> ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>`);
+                    })
+                }
+                else {
+				    alert("Không tìm thấy");
+                }
+            }
+        });
+        });
+
+        function FilterByCategory(categoryName) {
+
+            $.ajax(
+            {
+                type: "GET",
+                url: '@Url.ActionLink("Filter", "Home")',
+                data: {
+                    CategoryName: categoryName
+                },
+                error: function (result) {
+                    alert("error");
+                },
+                success: function (result) {
+                    $("div").remove(".product-layout");
+                    if (result != null) {
+                        $.each(result.data, function (index, value) {
+                            var star = "";
+                            if (value.star != null) {
+                                for (let i = 0; i < Math.floor(value.star); i++) {
+                                    star += "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                }
+                                for (let i = 5; i > Math.floor(value.star); i--) {
+                                    star += "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                }
+                            }
+                            else {
+                                star = "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                    "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                    "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                    "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                    "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                            }
+                            $('#list-product').append(`<div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
+                                <div class="product-box clearfix">
+                                    <div class="product-image">
+                                        <a href="detail.html" class="c-img link-product">
+                                                <img src="/imageUpload/${value.displayImages[0]}" class="img-responsive" alt="" height="250">
+                                        </a>
+                                        <a class="smooth quickview iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" target="_self" data-fancybox-type="iframe">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4 class="product-name"><a href="detail.html" class="smooth" title="">${value.productName}</a></h4>
+                                        <div class="price">
+                                            ${value.price} <span class="price-old">$142.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-box">
+                                               ${star}
+                                            </div>
+                                        </div>
+                                        <div class="product-desc">
+                                           ${value.description}
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                       <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 268px; "
+                                href="/Cart/AddToShoppingCart/${value.id}"> ADD TO CART</a>
+
+                                    </div>
+                                </div>
+                            </div>`);
+
+
+                        })
+                    }
+                    else {
+                        alert("Không tìm thấy");
+                    }
+                }
+        });
+
+        }
+        function SearchByPrice() {
+            $.ajax(
+                {
+                    type: "GET",
+                    url: '@Url.ActionLink("SearchByPrice", "Home")',
+                    data: {
+                        min: $("#one").val(),
+                        max: $("#two").val()
+                    },
+                    error: function (result) {
+                        alert("error");
+                    },
+                    success: function (result) {
+                        $("div").remove(".product-layout");
+                        if (result != null) {
+                            $.each(result.data, function (index, value) {
+                                var star = "";
+                                if (value.star != null) {
+                                    for (let i = 0; i < Math.floor(value.star); i++) {
+                                        star += "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                    }
+                                    for (let i = 5; i > Math.floor(value.star); i--) {
+                                        star += "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                    }
+                                }
+                                else {
+                                    star = "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                        "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                        "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                        "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                        "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                                }
+                                $('#list-product').append(`<div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
+                                <div class="product-box clearfix">
+                                    <div class="product-image">
+                                        <a href="detail.html" class="c-img link-product">
+                                                <img src="/imageUpload/${value.displayImages[0]}" class="img-responsive" alt="" height="250">
+                                        </a>
+                                        <a class="smooth quickview iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" target="_self" data-fancybox-type="iframe">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4 class="product-name"><a href="detail.html" class="smooth" title="">${value.productName}</a></h4>
+                                        <div class="price">
+                                            ${value.price} <span class="price-old">$142.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-box">
+                                                 ${star}
+                                            </div>
+                                        </div>
+                                        <div class="product-desc">
+                                           ${value.description}
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                       <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 268px; "
+                                href="/Cart/AddToShoppingCart/${value.id}"> ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>`);
+
+
+                            })
+                        }
+                        else {
+                            alert("Không tìm thấy");
+                        }
+                    }
+                });
+        }
+        $(".sort").change(function () {
+        $.ajax(
+        {
+            type: "GET",
+            url: '@Url.ActionLink("SortProducts", "Home")',
+            data: {
+                value: $(".sort").val()
+            },
+            contentType: "application/json;charset=utf-8",
+            dataType: "json",
+            error: function (result) {
+                debugger;
+                alert("error");
+            },
+            success: function (result) {
+
+                $("div").remove(".product-layout");
+                if (result != null) {
+                    $.each(result.data, function (index, value) {
+                        var star = "";
+                        if (value.star != null) {
+                            for (let i = 0; i < Math.floor(value.star); i++) {
+                                star += "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                            }
+                            for (let i = 5; i > Math.floor(value.star); i--) {
+                                star += "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                            }
+                        }
+                        else {
+                            star = "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star fa-stack-1x'></i> <i class='fa fa-star-o fa-stack-1x'></i></span>" +
+                                "<span class='fa fa-stack'> <i class='fa fa-star-o fa-stack-1x'></i></span>";
+                        }
+                        $('#list-product').append(`<div class="product-layout product-layout-table col-lg-4 col-md-4 col-sm-6 col-xs-6 col-12">
+                                <div class="product-box clearfix">
+                                    <div class="product-image">
+                                        <a href="detail.html" class="c-img link-product">
+                                                <img src="/imageUpload/${value.displayImages[0]}" class="img-responsive" alt="" height="250">
+                                        </a>
+                                        <a class="smooth quickview iframe-link btn-button quickview quickview_handler visible-lg" href="quickview.html" title="Quick view" target="_self" data-fancybox-type="iframe">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <div class="product-info">
+                                        <h4 class="product-name"><a href="detail.html" class="smooth" title="">${value.productName}</a></h4>
+                                        <div class="price">
+                                            ${value.price} <span class="price-old">$142.00</span>
+                                        </div>
+                                        <div class="rating">
+                                            <div class="rating-box">
+                                             ${star}
+                                            </div>
+                                        </div>
+                                        <div class="product-desc">
+                                           ${value.description}
+                                        </div>
+                                    </div>
+                                    <div class="button-group">
+                                       <a class="btn btn-warning" style="height: 45px; line-height: 35px; width: 268px; "
+                                href="/Cart/AddToShoppingCart/${value.id}"> ADD TO CART</a>
+                                    </div>
+                                </div>
+                            </div>`);
+                    })
+                }
+                else {
+				    alert("Không tìm thấy");
+                }
+            }
+        });
+        });
+         function AddToCart(id) {
+
+            $.ajax(
+            {
+                type: "POST",
+                url: '@Url.ActionLink("AddToShoppingCart", "Cart")',
+                data: {
+                    id: id
+                },
+                error: function (result) {
+                    alert("error");
+                },
+                success: function (result) {
+                    if (result == true) {
+                        alert("Bạn đã thêm vào giỏ hàng !");
+                    }
+                    else {
+						alert("Có lỗi xảy ra, vui lòng thử lại sau!");
+                    }
+                }
+            });
+
+        }
+    </script>
+   
+}

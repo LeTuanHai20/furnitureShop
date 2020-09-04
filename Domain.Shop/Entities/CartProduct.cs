@@ -31,5 +31,7 @@ namespace Domain.Shop.Entities
 		public int Quantity { get; set; }
 		[Column("TOTAL")]
 		public long Total { get; set; }
+		[Column("BOUGHT")]
+		public bool Bought { get; set; }
 	}
 }

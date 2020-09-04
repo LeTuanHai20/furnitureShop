@@ -6,6 +6,8 @@ using Domain.Application.Dto.Users;
 using Domain.Application.Entities;
 using Domain.Application.IRepositories;
 using Domain.Common.Security;
+using Domain.Shop.Entities;
+using Domain.Shop.IRepositories;
 using Infrastructure.Common;
 using Infrastructure.Database.DynamicLinq;
 using Infrastructure.Web;
@@ -25,15 +27,19 @@ namespace Web.Areas.Administrator.Controllers
 		IUserRoleRepository userRoleRepository;
 		IRoleRepository roleRepository;
 		UserInfoCache userInfoCache;
-		ILogger<UsersController> _logger;
-		public UsersController(ILogger<UsersController> logger, IUserRepository userRepository, IUserRoleRepository userRoleRepository, IRoleRepository roleRepository, UserInfoCache userInfoCache)
+        private readonly IAccountRepository accountRepository;
+        ILogger<UsersController> _logger;
+		public UsersController(ILogger<UsersController> logger, IUserRepository userRepository,
+			IUserRoleRepository userRoleRepository, IRoleRepository roleRepository, UserInfoCache userInfoCache,
+			IAccountRepository accountRepository)
 		{
 			_logger = logger;
 			this.userRepository = userRepository;
 			this.userRoleRepository = userRoleRepository;
 			this.roleRepository = roleRepository;
 			this.userInfoCache = userInfoCache;
-		}
+            this.accountRepository = accountRepository;
+        }
 		public ActionResult Index()
 		{
 			ViewBag.roles = roleRepository.All.Select(p => new SelectListItem
@@ -45,7 +51,7 @@ namespace Web.Areas.Administrator.Controllers
 		}
 
 		[HttpPost]
-		public ActionResult GetData([FromBody]DatatableRequest request)
+		public ActionResult GetData([FromBody] DatatableRequest request)
 		{
 			if (request.columns != null)
 			{
@@ -63,12 +69,11 @@ namespace Web.Areas.Administrator.Controllers
 							column.search.Operator = FilterOperator.Contains;
 							break;
 					}
-				} 
+				}
 			}
 			DatatableResult<UserGridViewModel> users = userRepository.GetUserViewModels(request);
 			return Json(users);
 		}
-
 		public ActionResult Create()
 		{
 			ViewBag.roles = roleRepository.All.Select(p => new SelectListItem
@@ -78,16 +83,10 @@ namespace Web.Areas.Administrator.Controllers
 			}).ToList();
 			return View();
 		}
-
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public ActionResult Create(UserViewModel model)
 		{
-			ViewBag.roles = roleRepository.All.Select(p => new SelectListItem
-			{
-				Text = p.RoleName,
-				Value = p.Id
-			}).ToList();
 			if (ModelState.IsValid && Validate(model))
 			{
 				try
@@ -107,8 +106,16 @@ namespace Web.Areas.Administrator.Controllers
 						}).ToList();
 						userRoleRepository.Add(addUserRole);
 					}
+					//add customer
+					Customer customer = new Customer() {
+						Id = model.Id,
+						Email = model.Email
+					};
 
+					accountRepository.Add(customer);
 					userRepository.Save(requestContext);
+					accountRepository.Save(requestContext);
+					
 					_logger.LogInformation("Create User {0} - ID: {1}", user.UserName, user.Id);
 					return RedirectToAction("Index");
 				}
@@ -126,10 +133,16 @@ namespace Web.Areas.Administrator.Controllers
 		{
 			try
 			{
-				User user = userRepository.Single(p => p.Id == id, null, include => include.Include(q => q.UserRole));
-				userRoleRepository.Delete(user.UserRole);
-				userRepository.Delete(user);
-				userRepository.Save(requestContext);
+                User user = userRepository.Single(p => p.Id == id, null, include => include.Include(q => q.UserRole));
+                userRoleRepository.Delete(user.UserRole);
+                userRepository.Delete(user);
+                userRepository.Save(requestContext);
+                //delete customer
+                Customer customer = accountRepository.All.Where(c => c.Id == id).Include(c => c.ProductReviews).Include(c => c.CustomerFeedbacks).FirstOrDefault();
+				accountRepository.Delete(customer.CustomerFeedbacks);
+				accountRepository.Delete(customer.CustomerFeedbacks);
+				accountRepository.Delete(customer);
+				accountRepository.Save(requestContext);
 				userInfoCache.RemoveUser(id);
 				_logger.LogInformation("Delete User {0} - ID: {1}", user.UserName, user.Id);
 				return true;
@@ -154,11 +167,6 @@ namespace Web.Areas.Administrator.Controllers
 		[ValidateAntiForgeryToken]
 		public ActionResult Update(UserViewModel model)
 		{
-			ViewBag.roles = roleRepository.All.Select(p => new SelectListItem
-			{
-				Text = p.RoleName,
-				Value = p.Id
-			}).ToList();
 			if (ModelState.IsValid && Validate(model))
 			{
 				try
@@ -169,7 +177,7 @@ namespace Web.Areas.Administrator.Controllers
 					if (model.ChangePassword)
 					{
 						user.Password = Security.EncryptPassword(model.Password);
-					}	
+					}
 					var deleteUserRole = user.UserRole.Where(p => model.Roles == null || !model.Roles.Contains(p.RoleId));
 					userRoleRepository.Delete(deleteUserRole);
 					if (model.Roles != null)
@@ -180,7 +188,7 @@ namespace Web.Areas.Administrator.Controllers
 							RoleId = p,
 							UserId = user.Id
 						}).ToList();
-						userRoleRepository.Add(addUserRole); 
+						userRoleRepository.Add(addUserRole);
 					}
 
 					userRepository.Update(user);
@@ -219,14 +227,8 @@ namespace Web.Areas.Administrator.Controllers
 					ModelState.AddModelError("ConfirmPassword", "Mật khẩu không khớp nhau");
 					result = false;
 				}
-	}
-
+			}
 			return result;
-		}
-
-		public ActionResult CropImage()
-		{
-			return View();
 		}
 	}
 }
